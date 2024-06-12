@@ -31,12 +31,7 @@ while True:
             # drawing landmarks on the frame
             mpDraw.draw_landmarks(frame, handslms, mpHands.HAND_CONNECTIONS, mpDraw.DrawingSpec(color=(3, 252, 244), thickness=2, circle_radius=2),
             mpDraw.DrawingSpec(color=(245,66,230), thickness=2, circle_radius=2))
-
-
-
-
-
-
+    
     cv2.imshow('Output', frame)
     if cv2.waitKey(1) == ord('q'):
         break
